@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Js</title>
+</head>
+<body>
+
+    
+    <div class="container">
+       
+
+
+        <section class="section ">
+            <h2>Задание 1</h2>
+            <span class="section__task-name">Подсчитать сумму всех чисел в заданном пользователем диапазоне.</span>
+            <input type="number" class="field field--number" placeholder="">
+            <button class="btn btn--primary bnt-calcRange">Введите число</button>
+                    <p><span class="out-range"></span> <span class="out-rangeSum"></span> </p>
+            </section>  
+            
+            <section class="section ">
+                <h2>Задание 2</h2>
+                <span class="section__task-name">Запросить 2 числа и найти только наибольший общий делитель.</span>
+                <input type="number" class="field fieldNodFirst"  placeholder="">
+                <input type="number" class="field fieldNodSecond" placeholder="">
+                
+                        <p><span class="out-nod-result"></span> </p>
+                </section>  
+                
+                <section class="section ">
+                    <h2>Задание 3</h2>
+                    <span class="section__task-name">Запросить у пользователя число и вывести все делители этого числа.</span>
+                    <input type="number" class="field fieldDividers"  placeholder=""> 
+                    
+                    <p><span class="out-resDividers"></span> </p>
+                    </section>  
+
+                    <section class="section ">
+                        <h2>Задание 4</h2>
+                        <span class="section__task-name">Определить количество цифр в введенном числе.</span>
+                        <input type="text" class="field quantityNumbers"  placeholder=""> 
+                        <p><span class="out-quantityNumbers"></span> </p>
+                     
+                        </section>  
+
+                    <section class="section ">
+                        <h2>Задание 5</h2>
+                        <span class="section__task-name">Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. </span>
+                        <input type="text" class="field checkValueOfNumbers"  placeholder=""> 
+                        <button class="btn btn--primary bntCheckValueOfNumbers">Введите числa</button>
+                        <p class="text-centered"><span class="out-checkValueOfNumbers"></span></p><p>Осталось ввести:<span class="leftToInp">10</span></p></p>
+                     
+                        </section>  
+                        
+                        <section class="section ">
+                            <h2>Задание 6</h2>
+                            <span class="section__task-name">Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется.</span>
+                            <button class="btn btn--primary btnStart">Начать</button>
+                            <div class="calculator">
+                                <div class="calculator__window">
+                                    <div class="calculator__wrap">
+                                        <input type="text" class="field field--calc">
+                                        <select name="select" id="select" class="mult-options">
+                                            <option value="/">Деление</option>
+                                            <option value="+" selected>Сложение</option>
+                                            <option value="-">Вычитание</option>
+                                            <option value="*">Умножение</option>
+                                        </select>
+                                        <input type="text" class="field field--calc">
+                                        
+                                        
+                                    </div>
+                                    <button class="btn btn--calculator" disabled>Посчитать</button>
+                                </div>
+                                <div class="calculator__result ">
+                                    <h2>
+                                        Ответ
+                                    </h2>
+                                    <div class="calculator__result_answer">
+                                        Результат</br>
+                                        <span class="answer" >0</span>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <button class="btn reCalc">Еще</button>
+                                        <button class="btn exit">Выход</button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                         
+                            </section>   
+
+                            <section class="section ">
+                                <h2>Задание 8</h2>
+                                <span class="section__task-name">Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.</span>
+                                <div class="days">
+                                    <span class="days-out"></span>
+                                </div>
+                                    <div>
+                                        <button class="btn prevDay">Prev</button>
+                                   
+                                        <button class="btn nextDay">Next</button>
+                                    </div>
+                                </section>  
+                                
+                            <section class="section ">
+                                <h2>Задание 8</h2>
+                                <span class="section__task-name">Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число необходимо умножить на числа от 1 до 10.</span>
+                                <div class="table">
+                                    
+                                </div>
+                                </section>  
+                            <section class="section ">
+                                <h2>Задание 8</h2>
+                                <span class="section__task-name">Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, < N или == N?». В зависимости от того, что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100, поделили пополам и получили 50. Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N.</span>
+
+                                <div class="firstStep">
+                                        <span>Загадайте число от 0 до 10</span>
+                                       <div><button class="btn StartGame">Начать</button></div>
+                                </div>
+                                <div class="game">
+                                    <button class="btn btnMore">Больше <span class="more"></span></button>
+                                    <button class="btn btnEqual">Число равно <span class="equal"></span></button>
+                                    <button class="btn btnLess">Меньше <span class="less"></span></button>   
+                            </div>
+                                     
+                                
+                              
+                                </section>  
+    </div>
+
+
+
+
+    
+</main>
+
+    <script src="app.js"></script>
+</body>
+</html>
