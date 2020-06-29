@@ -49,13 +49,16 @@ const nodFields = [firstNodNum, secondNodNum];
 // находим все  делители числа
 const getNode = (val) => {
   let arr = [];
-  for (let i = 1; i < val; i++) {
+  for (let i = 1; i <= val; i++) {
     if (!(val % i)) {
       arr.push(i);
     }
   }
+
+  
   return arr;
 };
+
 
 const nodeOut = (arrOne, arrTwo) => {
   let total = [],
@@ -71,18 +74,25 @@ const nodeOut = (arrOne, arrTwo) => {
     }
   }
   // находим наибольщий среди общих
+
   let result = Math.max.apply(null, total);
 
   if (result != -Infinity) {
     nodResult.innerHTML = result;
   }
+  
 };
+
+
+
+
+
 
 const fieldValidator = () => {
   let firstValue = firstNodNum.value,
     secondValue = secondNodNum.value;
 
-  if (firstValue.trim().length > 0 && secondValue.trim().length) {
+  if (firstValue.trim().length > 0 && secondValue.trim().length > 0) {
     nodeOut(firstValue, secondValue);
   }
 };
@@ -327,9 +337,9 @@ const variantMore = () => {
       number++
     };
  
-
-
     showResults(number);
+
+    
 }
 
 const variantLess = () => {
